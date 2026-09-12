@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Único para o Subdomínio Bet -->
+    <title>Águia Oficial</title>
+    <meta name="description" content="Portal oficial de apostas e jogos da Águia Oficial. Plataforma verificada com alta liquidez, cotações atualizadas e saques rápidos via PIX.">
+    <meta name="keywords" content="bet águia oficial, apostas águia oficial, jogos águia oficial, cassino águia oficial, aguia oficial bet">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Prevenção Crucial de Conteúdo Duplicado no Google -->
+    <link rel="canonical" href="https://aguiaoficial.net">
+
+    <!-- Redirecionamento Automático (Fallback) -->
+    <meta http-equiv="refresh" content="5;url=https://aguiaoficial.net">
+
+    <!-- Favicon & Ícones -->
+    <link rel="icon" type="image/png" href="https://r2.dashmulti.com/app/aguiaoficial/logo.png">
+    <link rel="apple-touch-icon" href="https://r2.dashmulti.com/app/aguiaoficial/logo.png">
+
+    <!-- Schema.org Diferenciado (Organization & Sports Betting Focus) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Águia Oficial Bet",
+      "url": "https://bet.aguiaoficial.net",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://aguiaoficial.net",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Open Graph Específico -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bet.aguiaoficial.net">
+    <meta property="og:title" content="Águia Oficial — Portal Bet Oficial">
+    <meta property="og:description" content="Acesse a plataforma oficial de apostas com saques automáticos e suporte 24h.">
+    <meta property="og:image" content="https://r2.dashmulti.com/app/aguiaoficial/logo.png">
+
+    <style>
+        :root {
+            --bg-dark: #0a0d14;
+            --panel-bg: #121824;
+            --border-color: #1e293b;
+            --accent-green: #00e676;
+            --accent-glow: rgba(0, 230, 118, 0.25);
+            --text-primary: #f8fafc;
+            --text-muted: #64748b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 16px;
+        }
+
+        .bet-wrapper {
+            width: 100%;
+            max-width: 460px;
+            background-color: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 32px 24px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+        }
+
+        .header-brand {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 24px;
+        }
+
+        .brand-info {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand-info img {
+            width: 50px;
+            height: auto;
+        }
+
+        .brand-text h1 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .brand-text span {
+            font-size: 0.75rem;
+            color: var(--accent-green);
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .security-badge {
+            background: rgba(0, 230, 118, 0.1);
+            color: var(--accent-green);
+            padding: 6px 12px;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        /* Contador Circular */
+        .redirect-section {
+            text-align: center;
+            margin: 24px 0;
+        }
+
+        .circle-timer {
+            position: relative;
+            width: 90px;
+            height: 90px;
+            margin: 0 auto 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .circle-timer svg {
+            width: 100%;
+            height: 100%;
+            transform: rotate(-90deg);
+        }
+
+        .circle-timer circle {
+            fill: none;
+            stroke-width: 6;
+            stroke-linecap: round;
+        }
+
+        .bg-circle { stroke: var(--border-color); }
+        
+        .progress-circle {
+            stroke: var(--accent-green);
+            stroke-dasharray: 251;
+            stroke-dashoffset: 0;
+            transition: stroke-dashoffset 1s linear;
+        }
+
+        .number {
+            position: absolute;
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--text-primary);
+        }
+
+        .redirect-text {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        /* Cards Informativos para SEO Adicional */
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+
+        .feature-item {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 10px;
+            text-align: left;
+            font-size: 0.8rem;
+            color: #94a3b8;
+        }
+
+        .feature-item strong {
+            display: block;
+            color: var(--text-primary);
+            margin-bottom: 2px;
+        }
+
+        .btn-bet {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 16px;
+            background-color: var(--accent-green);
+            color: #000000;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px var(--accent-glow);
+            transition: transform 0.2s ease, filter 0.2s ease;
+        }
+
+        .btn-bet:hover {
+            filter: brightness(1.1);
+            transform: translateY(-2px);
+        }
+
+        footer {
+            margin-top: 24px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="bet-wrapper">
+        <header class="header-brand">
+            <div class="brand-info">
+                <img src="https://r2.dashmulti.com/app/aguiaoficial/logo.png" alt="Águia Oficial Bet Logo">
+                <div class="brand-text">
+                    <h1>Águia Oficial</h1>
+                    <span>Portal Bet & Games</span>
+                </div>
+            </div>
+            <div class="security-badge">
+                ✓ Seguro
+            </div>
+        </header>
+
+        <section class="redirect-section">
+            <div class="circle-timer">
+                <svg>
+                    <circle class="bg-circle" cx="45" cy="45" r="40"></circle>
+                    <circle class="progress-circle" id="progress" cx="45" cy="45" r="40"></circle>
+                </svg>
+                <span class="number" id="timer">5</span>
+            </div>
+            <p class="redirect-text">Redirecionando para a plataforma principal de apostas...</p>
+        </section>
+
+        <!-- Seção de Keywords contextualizada para motores de busca -->
+        <div class="features-grid">
+            <div class="feature-item">
+                <strong>Plataforma Oficial</strong>
+                Acesso direto e seguro
+            </div>
+            <div class="feature-item">
+                <strong>Saques no PIX</strong>
+                Processamento imediato
+            </div>
+        </div>
+
+        <a href="https://aguiaoficial.net" class="btn-bet" id="redirect-btn">
+            Acessar Águia Oficial
+        </a>
+
+        <footer>
+            Plataforma Águia Oficial &copy; Todos os direitos reservados.
+        </footer>
+    </main>
+
+    <script>
+        (function() {
+            let seconds = 5;
+            const totalSeconds = 5;
+            const targetUrl = "https://aguiaoficial.net";
+            
+            const timerElement = document.getElementById("timer");
+            const progressCircle = document.getElementById("progress");
+            const circleLength = 2 * Math.PI * 40; // 251.32
+
+            const interval = setInterval(() => {
+                seconds--;
+                
+                // Animação da rosca de contagem
+                const offset = circleLength - (seconds / totalSeconds) * circleLength;
+                progressCircle.style.strokeDashoffset = offset;
+
+                if (timerElement) {
+                    timerElement.textContent = seconds;
+                }
+
+                if (seconds <= 0) {
+                    clearInterval(interval);
+                    window.location.href = targetUrl;
+                }
+            }, 1000);
+        })();
+    </script>
+
+</body>
+</html>
